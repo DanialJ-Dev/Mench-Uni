@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .board {
+    background-color: #ffde9b;
+    position: relative;
+    width: 400px; /* Board width */
+    height: 400px; /* Board height */
+    border: 2px solid #000;
+  }
+  
+  .player {
+    position: absolute;
+    width: 25px; /* Player piece width */
+    height: 25px; /* Player piece height */
+    border-radius: 50%;
+    border: 2px solid;
+  }
+  
+  .red {
+    top: 10px;
+    left: 10px;
+    background-color: red;
+  }
+  .red2 {
+    top: 10px;
+    left: 40px;
+    background-color: red;
+  }
+  .red3 {
+    top: 40px;
+    left: 10px;
+    background-color: red;
+  }
+  .red4 {
+    top: 40px;
+    left: 40px;
+    background-color: red;
+  }
+  .red6{
+    bottom: 185px;
+    right: 325px;
+    background-color: red;
+  }
+  .red7{
+    bottom: 185px;
+    right: 290px;
+    background-color: red;
+  }
+  .red8{
+    bottom: 185px;
+    right: 255px;
+    background-color: red;
+  }
+  .red9{
+    bottom: 185px;
+    right: 220px;
+    background-color: red;
+  }
+  
+  .blue {
+    top: 10px;
+    right: 10px;
+    background-color: blue;
+  }
+  .blue2 {
+    top: 10px;
+    right: 40px;
+    background-color: blue;
+  }
+  .blue3 {
+    top: 40px;
+    right: 10px;
+    background-color: blue;
+  }
+  .blue4 {
+    top: 40px;
+    right: 40px;
+    background-color: blue;
+  }
+  .blue6{
+    bottom: 325px;
+    right: 185px;
+    background-color: blue;
+  }
+  .blue7{
+    bottom: 290px;
+    right: 185px;
+    background-color: blue;
+  }
+  .blue8{
+    bottom: 255px;
+    right: 185px;
+    background-color: blue;
+    border: 1px solid;
+  }
+  .blue9{
+    bottom: 220px;
+    right: 185px;
+    background-color: blue;
+    border: 1px solid;
+  }
+  
+  .yellow {
+    bottom: 10px;
+    left: 10px;
+    background-color: rgb(255, 230, 0);
+  }
+  .yellow2 {
+    bottom: 10px;
+    left: 40px;
+    background-color: rgb(255, 230, 0);
+  }
+  .yellow3 {
+    bottom: 40px;
+    left: 10px;
+    background-color: rgb(255, 230, 0);
+  }
+  .yellow4 {
+    bottom: 40px;
+    left: 40px;
+    background-color: rgb(255, 230, 0);
+  }
+  .yellow6{
+      bottom: 45px;
+      right: 185px;
+      background-color: rgb(255, 230, 0);
+  }
+  .yellow7 {
+    bottom: 80px;
+    right: 185px;
+    background-color: rgb(255, 230, 0);
+  }
+  .yellow8 {
+    bottom: 115px;
+    right: 185px;
+    background-color: rgb(255, 230, 0);
+  }
+  .yellow9 {
+    bottom: 150px;
+    right: 185px;
+    background-color: rgb(255, 230, 0);
+  }
+  
+  .green {
+    bottom: 10px;
+    right: 10px;
+    background-color: green;
+  }
+  .green2 {
+    bottom: 10px;
+    right: 40px;
+    background-color: green;
+  }
+  .green3 {
+    bottom: 40px;
+    right: 10px;
+    background-color: green;
+  }
+  .green4 {
+    bottom: 40px;
+    right: 40px;
+    background-color: green;
+  }
+  .green6{
+    bottom: 185px;
+    right: 45px;
+    background-color: green;
+  }
+  .green7{
+    bottom: 185px;
+    right: 80px;
+    background-color: green;
+  }
+  .green8{
+    bottom: 185px;
+    right: 115px;
+    background-color: green;
+  }
+  .green9{
+    bottom: 185px;
+    right: 150px;
+    background-color: green;
+  }
+  
+  .way {
+    position: absolute;
+    width: 30px; /* Player piece width */
+    height: 30px; /* Player piece height */
+    border-radius: 50%;
+    border: 2px solid;
+  }
+
+  .white {
+    bottom: 150px;
+    right: 220px;
+    background-color: white;
+    
+  }
+  .white2 {
+    bottom: 115px;
+    right: 220px;
+    background-color: white;
+  }
+  .white3 {
+    bottom: 80px;
+    right: 220px;
+    background-color: white;
+  }
+  .white4 {
+    bottom: 45px;
+    right: 220px;
+    background-color: white;
+  }
+  .yellow5 {
+    bottom: 10px;
+    right: 220px;
+    background-color: rgb(255, 239, 95);
+  }
+  .white6 {
+    bottom: 10px;
+    right: 185px;
+    background-color: white;
+  }
+  .white7 {
+    bottom: 10px;
+    right: 150px;
+    background-color: white;
+  }
+  .white8 {
+    bottom: 45px;
+    right: 150px;
+    background-color: white;
+  }
+  .white9 {
+    bottom: 80px;
+    right: 150px;
+    background-color: white;
+  }
+  .white10 {
+    bottom: 115px;
+    right: 150px;
+    background-color: white;
+  }
+  .white11 {
+    bottom: 150px;
+    right: 150px;
+    background-color: white;
+  }
+  .white12 {
+    bottom: 150px;
+    right: 115px;
+    background-color: white;
+  }
+  .white13 {
+    bottom: 150px;
+    right: 80px;
+    background-color: white;
+  }
+  .white14 {
+    bottom: 150px;
+    right: 45px;
+    background-color: white;
+
+  }
+  .green5 {
+    bottom: 150px;
+    right: 10px;
+    background-color: rgb(63, 255, 63);
+  }
+  .white16 {
+    bottom: 185px;
+    right: 10px;
+    background-color: white;
+  }
+  .white17 {
+    bottom: 220px;
+    right: 10px;
+    background-color: white;
+  }
+  .white18 {
+    bottom: 220px;
+    right: 45px;
+    background-color: white;
+  }
+  .white19 {
+    bottom: 220px;
+    right: 80px;
+    background-color: white;
+  }
+  .white20 {
+    bottom: 220px;
+    right: 115px;
+    background-color: white;
+  }
+  .white21 {
+    bottom: 220px;
+    right: 150px;
+    background-color: white;
+  }
+  .white22 {
+    bottom: 255px;
+    right: 150px;
+    background-color: white;
+  }
+  .white23 {
+    bottom: 290px;
+    right: 150px;
+    background-color: white;
+  }
+  .white24 {
+    bottom: 325px;
+    right: 150px;
+    background-color: white;
+  }
+  .blue5 {
+    bottom: 360px;
+    right: 150px;
+    background-color: rgb(65, 150, 255);
+  }
+  .white26 {
+    bottom: 360px;
+    right: 185px;
+    background-color: white;
+  }
+  .white27 {
+    bottom: 360px;
+    right: 220px;
+    background-color: white;
+  }
+  .white28 {
+    bottom: 325px;
+    right: 220px;
+    background-color: white;
+  }
+  .white29 {
+    bottom: 290px;
+    right: 220px;
+    background-color: white;
+  }
+  .white30 {
+    bottom: 255px;
+    right: 220px;
+    background-color: white;
+  }
+  .white31 {
+    bottom: 220px;
+    right: 220px;
+    background-color: white;
+  }
+  .white32 {
+    bottom: 220px;
+    right: 255px;
+    background-color: white;
+  }
+  .white33 {
+    bottom: 220px;
+    right: 290px;
+    background-color: white;
+  }
+  .white34 {
+    bottom: 220px;
+    right: 325px;
+    background-color: white;
+  }
+  .red5 {
+    bottom: 220px;
+    right: 360px;
+    background-color: rgb(255, 120, 120);
+  }
+  .white36 {
+    bottom: 185px;
+    right: 360px;
+    background-color: white;
+  }
+  .white37 {
+    bottom: 150px;
+    right: 360px;
+    background-color: white;
+  }
+  .white38 {
+    bottom: 150px;
+    right: 325px;
+    background-color: white;
+  }
+  .white39 {
+    bottom: 150px;
+    right: 290px;
+    background-color: white;
+  }
+  .white40 {
+    bottom: 150px;
+    right: 255px;
+    background-color: white;
+  }
+
+  .fa-solid{
+    font-size: 40px;
+    position: absolute;
+  }
+
+  .fa-arrow-up-long{
+    bottom: 55px;
+    right: 250px;
+  }
+  .fa-arrow-right-long{
+    bottom: 245px;
+    right: 300px;
+  }
+  .fa-arrow-down-long{
+    bottom: 300px;
+    right: 120px;
+  }
+  .fa-arrow-left-long{
+    bottom: 115px;
+    right: 60px;
+  }
